@@ -31,6 +31,14 @@
     background: rgba(10,12,18,.6); color: #e9e6dd; cursor: pointer; }
   .ctl button:hover { border-color: rgba(233,230,221,.5); }
   .ctl button[aria-pressed="true"] { background: #e9e6dd; color: #0a0c12; border-color: #e9e6dd; }
+
+  /* Hide external export/download buttons injected by the component */
+  three-d-stage button, 
+  button:has-text("Download"),
+  [id*="Download"],
+  [class*="export"] {
+    display: none !important;
+  }
 </style>
 </head>
 <body>
